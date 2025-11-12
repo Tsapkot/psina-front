@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { Player, PlayerRole } from '../models/game.models';
 
 export interface GameState {
   sessionId: string | null;
   playerId: string | null;
-  role: PlayerRole | null;
+  role: string | null;
   playerName: string | null;
-  players: Player[];
+  players: any[];
   currentCardIndex: number;
   totalCards: number;
   cardAnswered: boolean;
